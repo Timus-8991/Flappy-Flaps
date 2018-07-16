@@ -41,12 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: SkyBAckground
+  - name: BackGround
     uniqueID: 1940698979
     locked: 0
-  - name: Bird
+  - name: MidGround
     uniqueID: 832135575
     locked: 0
-  - name: Grass
+  - name: ForeGround
     uniqueID: 985451565
     locked: 0

@@ -12,7 +12,7 @@ public class RollingBack : MonoBehaviour {
 	void Awake () {
 
         groundCollider = GetComponent<BoxCollider2D>();
-        groundHorizontalLength = 6.9f;
+        groundHorizontalLength = 6.2f;
 		
 	}
 	
@@ -29,7 +29,7 @@ public class RollingBack : MonoBehaviour {
 
     public void RepositionGround()
     {
-        Vector2 offset =  new Vector2(13f, 0);
+        Vector2 offset =  new Vector2(12.5f, 0);
         transform.position = (Vector2) transform.position + offset;
     }
 }

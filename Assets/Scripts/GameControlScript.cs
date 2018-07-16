@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameControlScript : MonoBehaviour {
 
@@ -10,7 +11,8 @@ public class GameControlScript : MonoBehaviour {
     public GameObject gameOverText;
     public GameObject gameOverText1;
     public bool GameOver = false;
-
+    private int Score = 0;
+    public Text scoreText;
 
     // Use this for initialization
     void Awake () {
@@ -34,6 +36,18 @@ public class GameControlScript : MonoBehaviour {
         }
 		
 	}
+
+    public void BirdScored()
+    {
+        if(GameOver)
+        {
+            return;
+        }
+
+        Score++;
+        scoreText.text = "Score : " + Score.ToString();
+
+    }
 
     public void onBirdDied()
     {
