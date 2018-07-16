@@ -11,8 +11,9 @@ public class GameControlScript : MonoBehaviour {
     public GameObject gameOverText1;
     public bool GameOver = false;
 
-	// Use this for initialization
-	void Awake () {
+
+    // Use this for initialization
+    void Awake () {
 		
         if(instance == null)
         {
